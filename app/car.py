@@ -22,10 +22,9 @@ class Car:
         fuel_price: float
     ) -> float:
         distance = self.calculate_distance(origin, destination)
-        # print(distance)
-        return (fuel_price * self.fuel_consumption * distance / 100) - 0.0007
+        return round((fuel_price * self.fuel_consumption * distance / 100), 2)
 
     @staticmethod
-    def calculate_distance(start: list, dest: list) -> float:
-        distance = sqrt((start[0] - dest[0]) ** 2 + (start[1] - dest[1]) ** 2)
+    def calculate_distance(start: list, goal: list) -> float:
+        distance = sqrt((start[0] - goal[0]) ** 2 + (start[1] - goal[1]) ** 2)
         return round(distance, 2)
