@@ -1,7 +1,7 @@
 from __future__ import annotations
 from json import load
-from app.customer import Customer
-from app.shop import Shop
+from customer import Customer
+from shop import Shop
 
 
 def shop_trip() -> None:
