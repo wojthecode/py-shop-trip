@@ -37,9 +37,9 @@ class Shop:
         cost = self.calculate_cart_cost(cart)
         print(f"Date: {recipt_date}")
         print(f"Thanks, {customer_name}, for your purchase!\nYou have bought:")
-        print(f"{cart.milk:g} milks for {cost["milk"]:g} dollars")
-        print(f"{cart.bread:g} breads for {cost["bread"]:g} dollars")
-        print(f"{cart.butter:g} butters for {cost["butter"]:g} dollars")
+        print(f"{cart.milk:g} milks for {cost['milk']:g} dollars")
+        print(f"{cart.bread:g} breads for {cost['bread']:g} dollars")
+        print(f"{cart.butter:g} butters for {cost['butter']:g} dollars")
         print(f"Total cost is {sum(cost.values())} dollars")
         print("See you again!")
 
